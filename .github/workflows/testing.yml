@@ -1,0 +1,15 @@
+name: Continuous Integration
+
+on:
+  pull_request:
+    branches: [ "skills-github-pages" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print something out as a test
+        run: echo Is this working?
+
